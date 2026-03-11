@@ -1,0 +1,22 @@
+<input type="text" id="task" placeholder="Enter here">
+<button onclick="task()">Add</button>
+<ul id="list"></ul>
+
+<script>
+    function task()
+    {
+        let inputbox = document.getElementById("task").value;
+        let li = `<li>${inputbox}</li>`;
+       let list = document.getElementById("list"); 
+       list.innerHTML = list.innerHTML + li;
+       document.getElementById("task").value = ""; //input will clear
+
+       //USING APPEND
+      /*  let inputbox = document.getElementById("task"); // input select
+       let li = document.createElement("li"); // li create
+       li.textContent = input.value; 
+       document.getElementById("list").append(li);
+       input.value = ""; */
+    }
+</script>
+

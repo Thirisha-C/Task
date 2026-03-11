@@ -1,0 +1,12 @@
+<input id="box" onkeyup="update()">
+<h1 id="result"></h1>
+
+<script>
+    //selecting input nd h1 tag
+    let inputbox = document.getElementById("box");
+    let result = document.getElementById("result");
+    function update()
+    {
+        result.textContent = inputbox.value;
+    }
+</script>

@@ -1,0 +1,47 @@
+
+<h1></h1>
+<select id="branch">
+    <option value="select">Select</option>
+</select>
+<script>
+    function greetConsole(name)
+    {
+        console.log('Hello ', name);
+    }
+    function greetHeading(name)
+    {
+        let heading = document.querySelector('h1');
+        heading.innerHTML = 'Hi ' + name;
+    }
+    function greet(callback)
+    {
+        callback('Sri');
+    }
+    greet(greetConsole);
+    greet(greetHeading); 
+
+    //forEach
+    arr = ['Sri', 'Ram', 'Ramya'];
+    arr.forEach(print);
+
+    function print(val)
+    {
+        console.log(val.toUpperCase());
+    }
+
+    arr.forEach(val => console.log(val));
+    arr.forEach((val,index,arr) =>{
+        arr[index] = val.toUpperCase();
+    })
+    console.log(arr); 
+    
+    let arr1 = ['ECE', 'IT', 'CSC', 'EEE'];
+    arr.forEach(val => {
+        let opt = document.createElement('option'); //creating option tag
+        opt.textContent = val;
+        opt.value = val;
+        document.getElementById('branch').appendChild(opt);
+    })  
+
+</script>
+

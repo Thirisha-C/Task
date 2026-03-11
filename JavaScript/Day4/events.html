@@ -1,0 +1,27 @@
+<style>
+    div{
+        background-color: #fd6569;
+        width: 100px;
+        height: 100px;
+    }
+</style>
+
+<div id="box"></div>
+<button onmouseover="mouse()" onclick="change()" onmouseout="mouseout()">Change Color</button>
+
+<script>
+    //select box
+    let box=document.getElementById("box");
+     function mouse()
+    {
+        box.style.backgroundColor = 'black';
+    }
+    function change()
+    {
+        box.style.backgroundColor = 'pink';
+    }
+    function mouseout()
+    {
+        box.style.backgroundColor = 'lavender';
+    }
+</script>

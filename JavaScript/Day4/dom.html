@@ -1,0 +1,21 @@
+<h1 id="head" class="heading">Helloo</h1>
+<div id="box"></div>
+
+
+<script>
+  let element = document.getElementById('box');
+  element.className = 'divcls'; //add classname
+  element.innerHTML = '<p>Bye Bye!</p>'; //tag add
+  element.style.color = 'red'; // color add
+  element.style.backgroundColor = 'lavender'; //add bgc
+  console.log(element.textContent);
+  let para = document.createElement('p');
+  para.textContent = 'This is p tag';
+  console.log(para);
+
+  // let h1 = document.getElementById("head");
+  // let p = document.createElement("p");
+  // p.innerText = "New paragraph";
+  // h1.appendChild(p); //  p tag add inside the h1 tag
+
+</script>

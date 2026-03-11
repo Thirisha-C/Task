@@ -1,0 +1,17 @@
+<p id="one">Helloo</p>
+<h1 id="title">Hello World</h1>
+<button onclick="change()">Change</button>
+<script>
+    //select paragraph tag using id
+    let para = document.getElementById('one'); 
+    console.log(para.textContent);
+    para.textContent = 'Bye';
+    
+    let h1 = document.getElementById('title');
+    console.log(h1.textContent);
+    
+    function change()
+    {
+        h1.textContent = "Bye World";
+    }
+</script>

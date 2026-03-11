@@ -1,0 +1,13 @@
+
+<input type="text" id="user" placeholder="Enter your name">
+<button onclick="login()">Login</button>
+<p id="msg"></p>
+
+<script>
+    function login()
+    {
+        let name = document.getElementById("user").value;
+        let msg = document.getElementById("msg");
+        msg.textContent = `Welcome ${name}`;
+        }
+</script>
