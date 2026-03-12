@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './product-image.css',
 })
 export class ProductImage {
-
+  image = 'perfume.jpg';
 }

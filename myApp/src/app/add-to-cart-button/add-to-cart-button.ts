@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './add-to-cart-button.css',
 })
 export class AddToCartButton {
-
+  addToCart(){
+    alert("Product added to cart");
+  }
 }

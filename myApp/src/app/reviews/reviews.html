@@ -1,1 +1,16 @@
-<p>reviews works!</p>
+<div style="text-align: center;">
+    <h3>Customer Reviews</h3>
+    <input [(ngModel)]="reviewText" placeholder="Write your review here">    
+    <button (click)="addReview()">Submit</button>
+    <ul>
+        <li *ngFor="let review of reviews">
+            {{review}}
+        </li>
+    </ul> 
+</div>
+
+<!-- 
+[(ngModel)] - 2wy binding 
+ (click) - event binding
+ ul - reviews will show here 
+ *ngFor -structural directives - array values loop-->

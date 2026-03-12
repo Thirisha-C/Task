@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './product-details.css',
 })
 export class ProductDetails {
-
+    name = "Bella Vitta Perfume";
+    price = 800;
+    description ="Long Lasting fragrance";
+    discountColor = "green";
 }
