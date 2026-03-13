@@ -1,0 +1,11 @@
+<h1 style="text-align: center;">Product Page</h1>
+<app-product-image [image] = "watch.image"></app-product-image>
+<app-product-details [product]="watch"></app-product-details>
+<app-add-to-cart-button  [product]="watch"
+(cartEvent) = "addToCart($event)"></app-add-to-cart-button>
+<app-reviews></app-reviews>
+<app-product-image [image] = "perfume.image"></app-product-image>
+<app-product-details [product]="perfume"></app-product-details>
+<app-add-to-cart-button [product]="perfume"
+(cartEvent) = "addToCart($event)"></app-add-to-cart-button>
+<app-reviews></app-reviews>
