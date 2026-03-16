@@ -3,10 +3,11 @@ import { RouterOutlet } from '@angular/router';
 // import { Header } from './header/header';
 // import { User } from './user/user';
 import { ProductPage } from './product-page/product-page';
+import { ProductService } from './service/product-service/product-service';
 
 @Component({
   selector: 'app-root',
-  imports: [ProductPage],
+  imports: [ProductPage, ProductService],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
