@@ -1,6 +1,11 @@
 <h3 style="color: blue; text-align: center;">Products List!</h3>
-<ul id="productslist">
-  <li *ngFor="let p of products">
-    {{p}}
-  </li>
-</ul>
+<button (click)="addData()">Add Product</button>
+<div class="container">
+  <div class="box" *ngFor="let item of products">
+   <img [src]="item.image"width="100" alt="product image">
+    <h4>{{item.title}}</h4>  
+    <p>Rs.{{item.price}}</p>
+    <p>{{item.description}}</p>
+    <h5>{{item.category}}</h5>
+</div>
+</div>

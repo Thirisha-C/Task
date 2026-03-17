@@ -1,5 +1,16 @@
-#productslist
+.container 
 {
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: wrap;
+    gap: 10px;
+}
+
+.box 
+{
+    background-color: lavender;
+    width: 200px;
+    border: 1px solid #fff;
+    padding: 10px;
     text-align: center;
-    list-style-type: none;
 }
