@@ -1,5 +1,4 @@
 <h3 style="color: blue; text-align: center;">Products List!</h3>
-<button (click)="addData()">Add Product</button>
 <div class="container">
   <div class="box" *ngFor="let item of products">
    <img [src]="item.image"width="100" alt="product image">
@@ -8,4 +7,10 @@
     <p>{{item.description}}</p>
     <h5>{{item.category}}</h5>
 </div>
+</div>
+<div>
+  <h3>Add New Product</h3>
+  <input type="text" placeholder="Product Title" [(ngModel)]="newTitle">
+  <input type="number" placeholder="Product Price" [(ngModel)]="newPrice">
+  <button (click)="addData()">Add Product</button>
 </div>

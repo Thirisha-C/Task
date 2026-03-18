@@ -16,12 +16,14 @@ export class Product {
     {
       return this.http.post("https://fakestoreapi.com/products", product);
     }
+    //Update
     updateProduct(id: number, data: any)
     {
-      return this.http.put(`https://fakestoreapi.com/products${id}`, data);
+      return this.http.put(`https://fakestoreapi.com/products/${id}`, data);
     }
+    //Delete
     deleteProduct(id: number)
     {
-      return this.http.delete(`https://fakestoreapi.com/products${id}`);
+      return this.http.delete(`https://fakestoreapi.com/products/${id}`);
     }
 }
