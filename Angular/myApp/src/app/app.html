@@ -1,12 +1,13 @@
-<!-- <h1 style="text-align: center;">Welcome to the Website</h1>
-<app-product-page></app-product-page><q></q>
+<h1 style="text-align: center;">Welcome to the Website</h1>
+ <!-- <app-product-page></app-product-page><q></q>
  <app-header></app-header>
 <app-user></app-user>  -->
-<h1>My App</h1>
-<a routerLink="">Home</a>
-<a routerLink="/productservice">Products</a>
-<a routerLink="/cart">Cart</a>
+<h1>{{title()}}</h1>
+<nav>
+    <a routerLink="" routerLinkActive="active">Home</a>
+    <a routerLink="/productservice" routerLinkActive="active">Products</a>
+    <a routerLink="/cart" routerLinkActive="active">Cart</a>
+</nav>
 <router-outlet></router-outlet>
 
-<app-product-service></app-product-service>
-
+<app-product></app-product>

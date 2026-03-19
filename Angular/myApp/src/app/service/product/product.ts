@@ -1,23 +1,25 @@
 import { Component, OnInit } from '@angular/core';
-import { Product } from '../product';
+import { ProductService } from '../product-service';
 import { CommonModule } from '@angular/common';
 import { Title } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-product-service',
+  selector: 'app-product',
   imports: [CommonModule, FormsModule],
-  templateUrl: './product-service.html',
-  styleUrl: './product-service.css',
+  templateUrl: './product.html',
+  styleUrl: './product.css',
 })
-export class ProductService implements OnInit {
+
+export class Product implements OnInit {
   products: any[] = [];
   newTitle = '';
   newPrice: number =0;
-  constructor(private product: Product) {}
+  constructor(private product: ProductService) {}
   ngOnInit(){
     this.loadProducts();
   }
+
   //Get
   loadProducts() {
     this.product.getProducts()
@@ -78,6 +80,7 @@ export class ProductService implements OnInit {
         alert("Update Failed!");
       });
   }
+  
   //delete
   deleteProduct(id: number) {
     this.product.deleteProduct(id)
