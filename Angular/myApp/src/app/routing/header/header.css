@@ -1,0 +1,7 @@
+nav{
+    background: lavender;
+    justify-content: center;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+}

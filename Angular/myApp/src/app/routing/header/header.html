@@ -1,1 +1,9 @@
-<p>header works!</p>
+<h1 style="text-align: center; color: brown;">SKill Academy</h1>
+<nav>
+    <a routerLink="" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">HOME</a>
+    <a [routerLink]="'about'" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">ABOUT</a>
+    <a routerLink="courses" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">COURSES</a>
+    <a routerLink="courses/:id" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">COURSES
+        DETAILS</a>
+    <a routerLink="contact" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">CONTACT</a>
+</nav>
