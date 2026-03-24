@@ -1,7 +1,27 @@
 nav{
-    background: lavender;
-    justify-content: center;
-    padding: 10px;
+    background-color: rgb(93, 93, 211);
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1{
+    color: brown;
+    font-weight: bold;
+}
+
+.active{
+    color: red;
+}
+
+.title{
+    color: white;
     display: flex;
     gap: 20px;
+}
+
+span{
+    color: white;
+    cursor: pointer;
 }

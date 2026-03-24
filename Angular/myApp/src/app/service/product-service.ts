@@ -11,6 +11,7 @@ export class ProductService {
     getProducts()
     {
       return this.http.get("https://fakestoreapi.com/products");
+        // return this.http.get('https://mocki.io/v1/0f0c1d5b-6c4d-4d4b-9d3e-6a2f2f4b8c01');
     }
 
     // Post(send data)

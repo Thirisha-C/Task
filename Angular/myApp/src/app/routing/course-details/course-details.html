@@ -1,1 +1,9 @@
-<p>course-details works!</p>
+<div>
+    <h3>Course Details</h3>
+</div>
+<div *ngIf="selectedCourse">
+    <p>{{selectedCourse.id}}</p>
+    <h2>{{selectedCourse.name}}</h2>
+    <img [src]="selectedCourse.image" width="100" alt="logo">
+    <p>Price: ₹{{selectedCourse.price}}</p>
+</div>
