@@ -1,0 +1,11 @@
+<h2>Products Page</h2>
+
+ <div class="container">
+<div *ngFor="let p of products" class="box">
+    <img [src]="p.image" width="80" alt="product image">
+    <p>{{p.name}}</p>
+    <p>{{p.price}}</p>
+    <button (click)="viewProduct(p.id)">View</button>
+</div>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,23 @@
+/* .container{
+    border: 1px solid gray;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+} */
+
+h2{
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.box{
+    border: 1px solid gray;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+}

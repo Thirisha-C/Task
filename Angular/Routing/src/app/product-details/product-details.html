@@ -1,0 +1,9 @@
+<div>
+    <h3>Product Details</h3>
+</div>
+<div *ngIf="selectedProduct">
+    <p>{{selectedProduct.id}}</p>
+    <h2>{{selectedProduct.name}}</h2>
+    <img [src]="selectedProduct.image" width="100" alt="logo">
+    <p>Price: ₹{{selectedProduct.price}}</p>
+</div>

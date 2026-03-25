@@ -1,0 +1,12 @@
+nav{
+    background-color: lavender;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+div{
+    color: white;
+    display: flex;
+    gap: 20px;
+}

@@ -10,9 +10,9 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class CourseDetails {
   id: any;
-  selectedCourse: any;
+    selectedCourse: any;
 
-  courses = [
+courses = [
     {
       id: 1,
       name: 'Angular',
@@ -79,7 +79,8 @@ export class CourseDetails {
   ngOnInit(){
     this.route.paramMap.subscribe(params => {
       this.id =Number(params.get('id'));
-      this.selectedCourse = this.courses.find(course => course.id === this.id);
+      this.selectedCourse = this.courses.find((course: { id: any; }) => course.id === this.id);
     });
   }
 }
+
