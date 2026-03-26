@@ -9,30 +9,33 @@ import { NotFound } from './not-found/not-found';
 
 export const routes: Routes = [
     {
-        path: '', 
+        path: '',
         component: Home
     },
     {
         path: 'products',
-         component: Products ,
+        component: Products
+    },
+    {
+        path: 'product/:id',
+        component: ProductDetails,
         children: [
             {
-                path: ':id', 
-                component: ProductDetails ,
-            children: [
-                {
-                    path: 'reviews',
-                    component: Reviews
-                }
-            ] 
-        }           
-        ]},
-        {
-            path: 'cart',
-            component: CartPage
-        },
-        {
-            path: '**',
-            component: NotFound
-        }
+                path: 'reviews',
+                component: Reviews
+            }
+        ]
+    },
+    {
+        path: 'cart',
+        component: CartPage
+    },
+    {
+        path: 'wishlist',
+        component: Wishlist
+    },
+    {
+        path: '**',
+        component: NotFound
+    }
 ];
