@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {  Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { ProductService } from '../product-service';
 
 @Component({
@@ -9,7 +9,7 @@ import { ProductService } from '../product-service';
   templateUrl: './products.html',
   styleUrl: './products.css',
 })
-export class Products {
+export class Products implements OnInit {
   products : any [] =[];
   constructor(
     private router: Router,

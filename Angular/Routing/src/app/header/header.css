@@ -10,3 +10,6 @@ div{
     display: flex;
     gap: 20px;
 }
+.active{
+    color: green;
+}

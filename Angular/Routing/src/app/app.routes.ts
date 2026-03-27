@@ -6,6 +6,9 @@ import { Reviews } from './reviews/reviews';
 import { CartPage } from './cart-page/cart-page';
 import { Wishlist } from './wishlist/wishlist';
 import { NotFound } from './not-found/not-found';
+import { productGuardGuard } from './product-guard-guard';
+import { Login } from './login/login';
+import { Logout } from './logout/logout';
 
 export const routes: Routes = [
     {
@@ -28,11 +31,21 @@ export const routes: Routes = [
     },
     {
         path: 'cart',
-        component: CartPage
+        component: CartPage,
+        canActivate: [productGuardGuard]
     },
     {
         path: 'wishlist',
-        component: Wishlist
+        component: Wishlist,
+        canActivate: [productGuardGuard]
+    },
+    {
+        path: 'login',
+        component: Login
+    },
+    {
+        path: 'logout',
+        component: Logout
     },
     {
         path: '**',

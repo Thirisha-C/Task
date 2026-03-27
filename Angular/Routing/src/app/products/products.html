@@ -3,7 +3,8 @@
  <div class="container">
 <div *ngFor="let p of products" class="box">
     <img [src]="p.image" width="80" alt="product image">
-   <div><button (click)="viewProduct(p.id)">View</button>
+   <div><button (click)="viewProduct(p.id)">View</button> 
+    <!-- <div><button [routerLink]="'products/product/:id'">View</button></div> -->
 </div>
 </div>
 </div>
