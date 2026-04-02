@@ -1,0 +1,19 @@
+<h3>Register Form</h3>
+
+<form #registerForm="ngForm" (ngSubmit)="submit(registerForm)">
+    <div>
+        <input type="text" name="username" [(ngModel)]="username" placeholder="Enter the Name" required>
+    </div>
+    <br>
+    <div>
+        <input type="email" name="email" [(ngModel)]="email" placeholder="Enter the Email" required>
+    </div>
+    <br>
+    <div>
+        <input type="password" [formControl]="passwordControl" placeholder=" Enter the password" required>
+    </div>
+    <br>
+    <div>
+        <button type="submit" [disabled]="registerForm.invalid">Login</button>
+    </div>
+</form>

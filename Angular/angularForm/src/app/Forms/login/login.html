@@ -1,0 +1,16 @@
+
+<h4>Login Page</h4>
+
+<form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+    <div>
+        <input type="text" name="username" [(ngModel)]="username" placeholder="Enter the username" required>
+    </div>
+    <br>
+    <div>
+        <input type="password" name="password" [(ngModel)]="password" placeholder=" Enter the password" required>
+    </div>
+    <br>
+    <div>
+        <button type="submit" [disabled]="loginForm.invalid">Login</button>
+    </div>
+</form>
