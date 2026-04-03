@@ -1,0 +1,17 @@
+<h3>Registration Form</h3>
+
+<form [formGroup] ="registerForm" (ngSubmit) = "onSubmit()">
+    <label>Username:</label>
+    <input type="text" formControlName="username">
+    <p *ngIf="registerForm.get('username')?.invalid">Username required</p>
+    <br>
+    <label>Email:</label>
+    <input type="email" formControlName="email">
+    <p *ngIf="registerForm.get('email')?.invalid">Enter valid email</p>
+    <br>
+    <label>Password:</label>
+    <input type="password" formControlName="password">
+    <p *ngIf="registerForm.get('password')?.invalid">Password required</p>
+    <br>
+    <button type="submit">Submit</button>
+</form>

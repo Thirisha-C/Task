@@ -1,0 +1,24 @@
+<h3>Student Form</h3>
+
+
+<form [formGroup] ="studentForm" (ngSubmit) = "onSubmit()">
+   <div> <label>Username:</label>
+    <input type="text" formControlName="username" placeholder="Enter the username">
+   </div> <br>
+   <div> <label>Email:</label>
+    <input type="email" formControlName="email" placeholder="Enter the email">
+   </div> <br>
+   <div> <label>Password:</label>
+    <input type="password" formControlName="password" placeholder="Enter the password">
+  </div>  <br>
+    <div formArrayName="skills">
+        <label>Skills:</label>
+        <div *ngFor="let skill of skills.controls; let i = index">
+            <input [formControlName]="i" placeholder="Enter the skill">
+        </div>
+    </div>
+    <br>
+    <button type="button" (click)="addSkill()">Add skill</button>
+    <br>
+    <div><button type="submit">Submit</button></div>
+</form>
