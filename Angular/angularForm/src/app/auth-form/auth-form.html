@@ -1,0 +1,25 @@
+<h3>Authentication Form</h3>
+
+<form [formGroup]="authForm" (ngSubmit)="onSubmit()">
+    <div>
+        <input type="text" formControlName="username" placeholder="Enter the username" >
+    </div>
+    <br>
+    <div>
+        <input type="email" formControlName="email" placeholder="Enter the email" >
+    </div>
+    <br>
+    <!-- set value button -->
+    <div>
+        <button type="button" (click)="setData()">Set Value</button>
+    </div>
+    <br>
+    <!-- patchval btn -->
+     <div>
+        <button type="button" (click)="updateName()">Patch Value</button>
+    </div>
+    <br>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+</form>

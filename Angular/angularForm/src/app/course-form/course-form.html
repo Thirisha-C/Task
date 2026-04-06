@@ -1,0 +1,26 @@
+<h3>Course Form</h3>
+
+<form [formGroup] ="course" (ngSubmit)="onSubmit()">
+   <div> <label>Username:</label>
+    <input type="text" formControlName="username" placeholder="Enter the username">
+   </div> 
+   <div *ngIf="course.get('username')?.invalid && course.get('username')?.touched">
+    Username required
+   </div>
+   <br>
+   <div> <label>Email:</label>
+    <input type="email" formControlName="email" placeholder="Enter the email">
+   </div>
+   <div *ngIf="course.get('email')?.invalid && course.get('email')?.touched">
+     Enter the valid email ID
+   </div>
+    <br>
+   <div> <label>Password:</label>
+    <input type="password" formControlName="password" placeholder="Enter the password">
+  </div>  
+  <div *ngIf="course.get('password')?.invalid && course.get('password')?.touched">
+    Username required
+   </div>
+   <br>
+    <div><button type="submit" [disabled] = "course.invalid">Submit</button></div>
+</form>
