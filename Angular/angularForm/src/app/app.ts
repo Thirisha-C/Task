@@ -10,10 +10,17 @@ import { SubDemo } from './RxJs/sub-demo/sub-demo';
 import { Sender } from './RxJs/component/sender/sender';
 import { Reciever } from './RxJs/component/reciever/reciever';
 import { Reciever1 } from './RxJs/component/reciever1/reciever1';
+import { ProductPage } from './RxJs/Subject/product-page/product-page';
+import { CartPage } from './RxJs/Subject/cart-page/cart-page';
+import { BehaviorSub } from './RxJs/Subject/behavior-sub/behavior-sub';
+import { ReplaySub } from './RxJs/Subject/replay-sub/replay-sub';
+import { AsyncSub } from './RxJs/Subject/async-sub/async-sub';
 
 @Component({
   selector: 'app-root',
-  imports: [Sender, Reciever, Reciever1, SubDemo,ObservableDemo,
+  imports: [AsyncSub, BehaviorSub, ReplaySub, 
+    ProductPage, CartPage, 
+    Sender, Reciever, Reciever1, SubDemo,ObservableDemo,
     AuthForm, Login, RegisterForm, Registration,StudentForm, CourseForm,
   ],
   templateUrl: './app.html',
