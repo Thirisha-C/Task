@@ -1,0 +1,8 @@
+<h4>User List</h4>
+
+<div *ngFor="let user of users; let i = index">
+    <button (click)="selectUser(i)">{{ user }}</button>
+</div>
+<hr>
+
+<app-user-post *ngIf="selectedUserId" [userId]="selectedUserId"></app-user-post>
