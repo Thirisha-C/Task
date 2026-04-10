@@ -1,0 +1,16 @@
+
+<h4>User List</h4>
+
+<!-- loading -->
+ <p *ngIf="loading">Loading user..</p>
+
+ <!-- Error -->
+  <p *ngIf="errorMsg" style="color: blue;">{{ errorMsg }}</p>
+
+  <!-- data -->
+   <ul *ngIf="!loading && users.length">
+    <li *ngFor="let user of users">
+        {{user.name}} - {{user.email}}
+    </li>
+   </ul>
+   <button (click)="fetchUser()">Reload</button>

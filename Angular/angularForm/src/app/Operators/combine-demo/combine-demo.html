@@ -1,0 +1,7 @@
+<form [formGroup]="form">
+    <input formControlName="password" placeholder="password">
+    <input formControlName="confirmPassword" placeholder="confirmPassword">
+</form>
+
+<p *ngIf="!match">Password not matching</p>
+<p *ngIf="match">Paasword matching</p>
