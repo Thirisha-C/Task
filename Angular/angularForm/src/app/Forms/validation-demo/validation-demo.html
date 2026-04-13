@@ -1,0 +1,35 @@
+
+<form #taskForm="ngForm" (ngSubmit)="addTask(taskForm)">
+
+    <label>Title  </label>
+    <input type="text" name="title" [(ngModel)]="task.title" required #title="ngModel" placeholder="Enter the title">
+    <div *ngIf="title.invalid && title.touched" class="error">Title required</div>
+    <br><br>
+
+    <label>Description  </label>
+    <textarea name="description" [(ngModel)]="task.description" required #desc="ngModel" placeholder="Enter the description"></textarea>
+    <div *ngIf="desc.invalid && desc.touched" class="error">Description required</div>
+    <br><br>
+
+    <label>Assigned To  </label>
+    <input type="text" name="assignedTo" [(ngModel)]="task.assignedTo" required #assigned="ngModel" placeholder="Enter the field">
+    <div *ngIf="assigned.invalid && assigned.touched" class="error">Field required</div>
+    <br><br>
+
+    <label>Priority  </label>
+    <select name="priority" [(ngModel)]="task.priority" required #priority="ngModel" placeholder="Enter the Priority">
+        <option value="">Select</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+    </select>
+    <div *ngIf="priority.invalid && priority.touched" class="error">Priority required</div>
+    <br><br>
+
+    <label>Due Date  </label>
+    <input type="date" name="dueDate" [(ngModel)]="task.dueDate" required #date="ngModel" placeholder="Enter the date">
+    <div *ngIf="date.invalid && date.touched" class="error">Date required</div>
+    <br><br>
+
+    <button type="submit" [disabled]="taskForm.invalid">Add Task</button>
+</form>

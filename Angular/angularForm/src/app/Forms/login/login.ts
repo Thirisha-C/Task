@@ -17,7 +17,7 @@ export class Login {
       alert("LoggedIn successfully");
     }
     else{
-      alert("Enter the username and passwor");
+      alert("Enter the username and password");
     }
   }
 }
