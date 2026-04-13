@@ -17,6 +17,7 @@ export class ValidationDemo
     priority: '',
     dueDate: ''
   };
+
   tasks: any[] =[];
   addTask(form: any)
   {
@@ -31,7 +32,8 @@ export class ValidationDemo
       alert('Task added');
       form.reset();
     }
-    else{
+    else
+    {
       return;
     }
   }

@@ -29,10 +29,11 @@ import { ShareReplayDemo } from './Operators/share-replay-demo/share-replay-demo
 import { UnsubscribeDemo } from './Operators/unsubscribe-demo/unsubscribe-demo';
 import { SearchForm } from './Forms/search-form/search-form';
 import { ValidationDemo } from './Forms/validation-demo/validation-demo';
+import { HttpUser } from './http/http-user/http-user';
 
 @Component({
   selector: 'app-root',
-  imports: [ ShareDemo, ShareReplayDemo, UnsubscribeDemo, SearchForm,ValidationDemo
+  imports: [ ShareDemo, ShareReplayDemo, UnsubscribeDemo, SearchForm, ValidationDemo, HttpUser
     //  UtilityDemo, 
     // CombineDemo, CombineProduct, ForkDemo, 
     // User, DebounceDemo, FilterDemo, SwitchOpe, OpeDemo, 

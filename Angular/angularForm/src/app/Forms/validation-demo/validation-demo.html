@@ -30,6 +30,7 @@
     <input type="date" name="dueDate" [(ngModel)]="task.dueDate" required #date="ngModel" placeholder="Enter the date">
     <div *ngIf="date.invalid && date.touched" class="error">Date required</div>
     <br><br>
-
+    <div>
     <button type="submit" [disabled]="taskForm.invalid">Add Task</button>
+    </div>
 </form>

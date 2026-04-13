@@ -24,6 +24,7 @@ export class ShareDemo implements OnInit
     this.users$.subscribe(res => {
       console.log('Sub2:', res);
     });
+    
     setTimeout(() => {
       this.users$.subscribe(res => {
         console.log('Sub3:', res);
