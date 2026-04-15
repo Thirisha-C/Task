@@ -1,0 +1,39 @@
+
+<h4>Add task</h4>
+
+<form [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+    <input type="text" formControlName="title" placeholder="Enter the title">
+    <div *ngIf="title?.invalid && submitted">
+        Title required
+    </div> <br>
+
+    <textarea formControlName="description" placeholder="Enter the Description"></textarea>
+    <div *ngIf="description?.invalid && submitted">Description required</div> <br>
+    <!-- <div *ngIf="taskForm.get(description)?.invalid && submitted"></div> -->
+   
+    <input type="text" formControlName="assignedTo" placeholder="Assigned to">
+    <div *ngIf="assignedTo?.invalid && submitted">Assigned to required</div> <br>
+
+    <select formControlName="priority">
+        <option value="">Select Priority</option>
+        <option>High</option>
+        <option>Medium</option>
+        <option>Low</option>
+    </select>
+    <div *ngIf="priority?.invalid && submitted">Priority required</div> <br>
+
+    <input type="date" formControlName="dueDate">
+    <div *ngIf="dueDate?.invalid && submitted">Date required</div> <br>
+
+    <button type="submit">Add task</button>
+</form>
+
+ <!-- - A form to add a new task.
+- Fields required:
+    Task Title    (text)
+    Description   (textarea)
+    Assigned To   (text)
+    Priority      (dropdown: High / Medium / Low)
+    Due Date      (date)
+- Proper validation is required for all fields.
+  Show error messages if any field is left empty. -->

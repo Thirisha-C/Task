@@ -1,0 +1,25 @@
+
+<h4>Edit Task</h4>
+<form [formGroup]="taskForm" (ngSubmit)="onUpdate()">
+    <input type="text" formControlName="title" placeholder="title">
+    <div *ngIf="taskForm.get('title')?.invalid && submitted">Field required</div><br>
+
+    <textarea formControlName="description" placeholder="Description"></textarea>
+    <div *ngIf="taskForm.get('description')?.invalid && submitted">Field required</div><br>
+
+    <input type="text" formControlName="assignedTo" placeholder="Assigned To">
+    <div *ngIf="taskForm.get('assignedTo')?.invalid && submitted">Field required</div><br>
+
+    <select formControlName="priority">
+        <option value="">Select Priority</option>
+        <option>High</option>
+        <option>Medium</option>
+        <option>Low</option>
+    </select>
+    <div *ngIf="taskForm.get('priority')?.invalid && submitted">Field required</div><br>
+    
+    <input type="date" formControlName="dueDate" placeholder="title">
+    <div *ngIf="taskForm.get('dueDate')?.invalid && submitted">Field required</div><br>
+
+    <button type="submit">Uodate Task</button>
+</form>
