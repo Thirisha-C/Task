@@ -4,3 +4,4 @@
 <input type="text" [(ngModel)] = "password" placeholder="password">
 <br><br>
 <div><button (click)="login()">Login</button></div>
+<p *ngIf="isLoggedIn()">User logged in</p>
