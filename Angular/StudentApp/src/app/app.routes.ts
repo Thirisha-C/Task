@@ -7,8 +7,13 @@ import { RegisterPage } from './register-page/register-page';
 import { authGuard } from './auth-guard';
 import { AddTask } from './add-task/add-task';
 import { EditTask } from './edit-task/edit-task';
+import { Home } from './home/home';
 
 export const routes: Routes = [
+    {
+        path: '',
+        component: Home
+    },
     {
         path: 'register',
         component: RegisterPage

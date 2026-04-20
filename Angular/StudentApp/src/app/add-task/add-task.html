@@ -1,6 +1,7 @@
 
-<h4>Add task</h4>
-
+<div class="container">
+    <div class="card">
+<h2>Add Task</h2>
 <form [formGroup]="taskForm" (ngSubmit)="onSubmit()">
     <input type="text" formControlName="title" placeholder="Enter the title">
     <div *ngIf="title?.invalid && submitted">
@@ -27,6 +28,8 @@
 
     <button type="submit">Add task</button>
 </form>
+</div>
+</div>
 
  <!-- - A form to add a new task.
 - Fields required:

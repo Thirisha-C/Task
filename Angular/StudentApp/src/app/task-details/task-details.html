@@ -1,13 +1,23 @@
 
-<h4>Task Details</h4>
+<div class="container">
+    <div class="card">
+<h2>Task Details</h2>
 
 <div>
-    <p><b>Title: </b>{{ task.title }}</p>
-    <p><b>Description: </b>{{ task.description }}</p>
-    <p><b>Assigned To: </b>{{ task.assignedTo }}</p>
-    <p><b>Priority: </b>{{ task.priority }}</p>
-    <p><b>Due Date: </b>{{ task.dueDate }}</p>
-    <p><b>Status: </b>{{ task.status }}</p>
+    <h5> <b>Title: </b> </h5>
+    <p>{{ task.title }}</p>
+     <h5> <b>Description: </b> </h5>
+    <p>{{ task.description }}</p>
+     <h5> <b>Assigned To: </b> </h5>
+    <p>{{ task.assignedTo }}</p>
+     <h5> <b>Priority: </b> </h5>
+    <p>{{ task.priority }}</p>
+     <h5> <b>Due Date: </b> </h5>
+    <p>{{ task.dueDate }}</p>
+     <h5> <b>Status: </b> </h5>
+    <p>{{ task.status }}</p>
 
     <button (click)="markComplete()">Mark as Complete</button>
+</div>
+</div>
 </div>

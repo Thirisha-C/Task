@@ -1,11 +1,10 @@
 <nav>
-    <div>
-        <a routerLink="register" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">Register Page</a>    |
-        <a routerLink="login" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">Login</a>     |
-        <a routerLink="dashboard" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Dashboard</a>     |
-        <a routerLink="taskList" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Task List</a>     |
-        <a routerLink="addTask" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Add Task</a>     |
-        <a routerLink="editTask" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Edit Task</a>      |
+    <div class="container">
+        <a routerLink="" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">Home Page</a>
+        <a routerLink="register" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">Register Page</a>
+        <a routerLink="login" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">Login</a>
+        <a routerLink="dashboard" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Dashboard</a>
+        <a routerLink="taskList" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Task List</a>
         <button (click)="logout()">Logout</button>
     </div>
    </nav>

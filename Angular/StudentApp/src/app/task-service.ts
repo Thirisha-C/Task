@@ -11,6 +11,7 @@ export class TaskService {
     {
       id: 1,
       title: 'Learn HTML',
+      description: 'Understand HTML basics, tags, forms, and page structure.',
       assignedTo: 'Dinga',
       priority: 'High',
       dueDate: '2026-04-05',
@@ -19,6 +20,7 @@ export class TaskService {
     {
       id: 2,
       title: 'Learn CSS',
+      description: 'Learn styling, layouts, flexbox, and responsive design.',
       assignedTo: 'Dingi',
       priority: 'Medium',
       dueDate: '2026-04-06',
@@ -27,6 +29,7 @@ export class TaskService {
     {
       id: 3,
       title: 'Learn JavaScript',
+      description: 'Practice JS fundamentals, functions, arrays, and DOM manipulation.',
       assignedTo: 'John',
       priority: 'High',
       dueDate: '2026-04-07',
@@ -35,6 +38,7 @@ export class TaskService {
     {
       id: 4,
       title: 'Learn TypeScript',
+      description: 'Understand types, interfaces, and strong typing concepts.',
       assignedTo: 'Alexa',
       priority: 'Low',
       dueDate: '2026-04-08',
@@ -43,6 +47,7 @@ export class TaskService {
     {
       id: 5,
       title: 'Learn Angular',
+      description: 'Study components, services, routing, and forms in Angular.',
       assignedTo: 'Siri',
       priority: 'High',
       dueDate: '2026-04-09',
@@ -51,6 +56,7 @@ export class TaskService {
     {
       id: 6,
       title: 'Project',
+      description: 'Build Student Task Manager app with full CRUD functionality.',
       assignedTo: 'Sam',
       priority: 'Medium',
       dueDate: '2026-04-21',
@@ -59,6 +65,7 @@ export class TaskService {
     {
       id: 7,
       title: 'Review',
+      description: 'Review project code, fix bugs, and prepare for submission.',
       assignedTo: 'Sophia',
       priority: 'High',
       dueDate: '2026-04-22',

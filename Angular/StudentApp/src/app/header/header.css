@@ -1,0 +1,42 @@
+
+nav {
+  background-color: #fd6569;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+
+.container
+  { 
+    display: flex;
+    gap: 30px;
+}
+
+button {
+  padding: 6px 14px;
+  background-color: #3a3a3a;
+  border: none;
+  color: white;
+  border-radius: 4px;
+}
+
+ a 
+ {
+  color: black;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+ a:hover 
+ {
+  color: #fff;
+}
+
+.active 
+{
+  color: blue;
+}

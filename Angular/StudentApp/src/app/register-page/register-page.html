@@ -1,19 +1,22 @@
 
-<h4>Create an account</h4>
+<div class="container">
+  <div class="card"> 
+  <h2>Create an account</h2>
+
 <form [formGroup]="registerForm" (ngSubmit)="submit()">
 
   <input type="text" formControlName="username" placeholder="Enter Username">
-  <div *ngIf="submitted && registerForm.get('username')?.errors">
+  <div *ngIf="submitted && registerForm.get('username')?.errors" class="error">
     Username is required
   </div>
 
   <input type="password" formControlName="password" placeholder="Enter Password">
-  <div *ngIf="submitted && registerForm.get('password')?.errors">
+  <div *ngIf="submitted && registerForm.get('password')?.errors" class="error">
     Password required
   </div>
 
   <input type="password" formControlName="confirmPassword" placeholder="Confirm Password">
-  <div *ngIf="submitted && registerForm.get('confirmPassword')?.errors">
+  <div *ngIf="submitted && registerForm.get('confirmPassword')?.errors" class="error">
     Confirm Password required
   </div>
   <button type="submit">Register</button>
@@ -24,3 +27,5 @@
   Already have an account?
   <a routerLink="/login">Login</a>
 </p>
+</div>
+</div>

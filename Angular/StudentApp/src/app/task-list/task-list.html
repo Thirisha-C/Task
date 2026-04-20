@@ -1,6 +1,7 @@
 
-<h4>Task List</h4>
-<button routerLink="/addTask">Add Task</button>
+<div class="container">
+<h2>Task List</h2>
+<button class="add" routerLink="/addTask">Add Task</button>
 
 <table>
     <tr>
@@ -19,9 +20,10 @@
         <td>{{task.dueDate}}</td>
         <td>{{task.status}}</td>
         <td>
-            <button (click)="viewTask(task.id)">View</button>
-            <button (click)="editTask(task.id)">Edit</button>
-            <button (click)="deleteTask(task.id)">Delete</button>
+            <button class="view" (click)="viewTask(task.id)">View</button>
+            <button class="edit" (click)="editTask(task.id)">Edit</button>
+            <button class="delete" (click)="deleteTask(task.id)">Delete</button>
         </td>
     </tr>
 </table>
+</div>

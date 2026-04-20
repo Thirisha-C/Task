@@ -1,4 +1,104 @@
-.high
+
+.container 
 {
-    background-color: brown;
+  padding: 20px;
+  min-height: 100vh;
+  color: white;
+}
+
+h2 
+{
+  text-align: center;
+  margin-bottom: 15px;
+  color: black;
+}
+
+.add 
+{
+  margin-bottom: 15px;
+  padding: 8px 14px;
+  background-color: #3a3a3a;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add:hover 
+{
+  background-color: #555;
+}
+
+table 
+{
+  width: 100%;
+  border-collapse: collapse;
+  background-color: black;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th 
+{
+  background-color: #2a2a2a;
+  padding: 12px;
+  text-align: left;
+  color: #ccc;
+}
+
+td 
+{
+  padding: 12px;
+  border-bottom: 1px solid #333;
+}
+
+tr:hover 
+{
+  background-color: #9f919137;
+}
+
+.high 
+{
+  background-color: rgb(223, 77, 102);
+}
+
+button 
+{
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 4px;
+}
+
+.view 
+{
+  background-color: #444;
+  color: white;
+}
+
+.view:hover 
+{
+  background-color: #666;
+}
+
+.edit 
+{
+  background-color: #2f4f4f;
+  color: white;
+}
+
+.edit:hover 
+{
+  background-color: #3f6f6f;
+}
+
+.delete 
+{
+  background-color: #5a1e1e;
+  color: white;
+}
+
+.delete:hover 
+{
+  background-color: #7a2a2a;
 }

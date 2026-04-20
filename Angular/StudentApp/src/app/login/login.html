@@ -1,26 +1,28 @@
-<h4>Login Page</h4>
+<div class="container">
+    <div class="card">
+        <h2>Login Page</h2>
 
-<form [formGroup]="loginForm" (ngSubmit)="login()">
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
 
-    <label>Username</label>
-    <input type="text" formControlName="username" placeholder="Enter Username">
-    <div *ngIf="username?.invalid && submitted">
-        Username is required
-    </div> <br>
+            <input type="text" formControlName="username" placeholder="Enter Username">
+            <div *ngIf="username?.invalid && submitted" class="error">
+                Username is required
+            </div> <br>
 
-    <label>Password</label>
-    <input type="password" formControlName="password" placeholder="Enter Password">
-    <div *ngIf="password?.invalid && submitted">
-        Password is required
-    </div> <br>
-    
-    <div>
-        <button type="submit" [disabled]="loginForm.invalid">Login</button>
+            <input type="password" formControlName="password" placeholder="Enter Password">
+            <div *ngIf="password?.invalid && submitted" class="error">
+                Password is required
+            </div> <br>
+
+            <div>
+                <button type="submit" [disabled]="loginForm.invalid">Login</button>
+            </div>
+        </form>
+
+        <!-- Register link -->
+        <p>
+            Don't have an account?
+            <a routerLink="/register">Register</a>
+        </p>
     </div>
-</form>
-
-<!-- Register link -->
-<p>
-    Don't have an account?
-    <a routerLink="/register">Register</a>
-</p>
+</div>
