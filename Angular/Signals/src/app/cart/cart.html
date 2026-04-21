@@ -1,0 +1,12 @@
+
+<h2>Cart</h2>
+
+<p>Price: {{ price() }}</p>
+<p>Quantity: {{ quantity() }}</p>
+
+<h3>Total: {{ total() }}</h3>
+
+<button (click)="increaseQty()">Increase Qty</button>
+<button (click)="decreaseQty()">Decrease Qty</button>
+
+<button (click)="changePrice()">Change Price</button>
