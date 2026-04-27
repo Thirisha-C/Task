@@ -5,6 +5,7 @@ import { Courses } from './routing/courses/courses';
 import { CourseDetails } from './routing/course-details/course-details';
 import { Contact } from './routing/contact/contact';
 import { NotFound } from './routing/not-found/not-found';
+import { SearchPage } from './routing/search-page/search-page';
 
 export const routes: Routes = [
 
@@ -29,6 +30,10 @@ export const routes: Routes = [
     {
         path: 'contact',
         component: Contact
+    },
+    {
+        path: 'search',
+        component: SearchPage
     },
     {
         path: '**',

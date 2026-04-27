@@ -18,8 +18,9 @@ export class ProductPage {
     brand: "Casio",
     description: "Vintage Series Digital Gold Dial"
   };
-  perfume ={
-    image: 'assets/perfume.jpg',
+  perfume =
+  {
+  image: 'assets/perfume.jpg',
   name: 'Bella Vitta Perfume',
   price: 800,
   description: 'Long Lasting fragrance',
@@ -27,9 +28,4 @@ export class ProductPage {
   discountColor: "green"
   };
 
-  addToCart(product:any)
-  {
-  alert(product.name + " Product added to cart");  
 }
-}
-

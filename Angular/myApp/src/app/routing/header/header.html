@@ -8,6 +8,9 @@
     <a routerLink="courses" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">COURSES</a>
    <a routerLink="contact" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">CONTACT</a> 
 </div>
+<div>
+        <app-search (searchChanged)="handleSearch($event)"></app-search>
+</div>
 <div style="display: flex; gap: 15px; color: black;">
     <span>Login</span>
     <span>Logout</span>
