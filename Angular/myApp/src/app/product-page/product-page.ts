@@ -27,5 +27,4 @@ export class ProductPage {
   discount: '20% Discount',
   discountColor: "green"
   };
-
 }

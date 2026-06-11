@@ -6,6 +6,7 @@ import { Component, signal } from '@angular/core';
   templateUrl: './counter.html',
   styleUrl: './counter.css',
 })
+
 export class Counter 
 {
   //signal create

@@ -1,0 +1,10 @@
+.city{
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+.add{
+    position: static;
+    top: 30px;
+}

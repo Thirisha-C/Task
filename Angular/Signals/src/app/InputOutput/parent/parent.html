@@ -1,0 +1,9 @@
+
+<h4>Parent</h4>
+
+<p>Message: {{ message }}</p>
+
+<app-child
+    [price]="parentPrice"
+    (add)="addToCart($event)">
+</app-child>

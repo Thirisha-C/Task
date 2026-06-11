@@ -1,0 +1,29 @@
+form {
+  width: 350px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+small,
+form div {
+  color: red;
+  font-size: 13px;
+}
+
+button {
+  padding: 8px 12px;
+  margin-right: 8px;
+  cursor: pointer;
+}

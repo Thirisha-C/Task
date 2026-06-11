@@ -10,7 +10,7 @@ import { ReplaySubject } from 'rxjs';
 })
 export class ReplaySub implements OnInit {
 
-  replaySub = new ReplaySubject<number>(2); //last 2 values will be store
+  replaySub = new ReplaySubject<number>(2); 
   values: number[] = [];
 
   ngOnInit() {

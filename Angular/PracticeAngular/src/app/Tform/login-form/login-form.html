@@ -1,0 +1,35 @@
+<div *ngIf="isLoading()">
+  <ngx-skeleton-loader count="4" appearance="line"></ngx-skeleton-loader>
+<br>
+<ngx-skeleton-loader
+    count="2"
+    appearance="square">
+  </ngx-skeleton-loader>
+  </div>
+<div *ngIf="!isLoading()">
+  <form #userForm="ngForm" (ngSubmit)="submitForm(userForm)">
+    <label>Name:</label>
+    <input type="text" name="name" [(ngModel)]="user.name" required minlength="3" #name="ngModel">
+    <div *ngIf="name.invalid && name.touched">
+      Name is required
+    </div><br><br>
+
+    <label>Email:</label>
+    <input type="email" name="email" [(ngModel)]="user.email" required email #email="ngModel">
+    <div *ngIf="email.invalid && email.touched">
+      Enter valid email
+    </div><br><br>
+
+    <label>Password:</label>
+    <input type="password" name="password" [(ngModel)]="user.password" required minlength="6" #password="ngModel">
+    <div *ngIf="password.invalid && password.touched">
+      Password minimum 6 characters
+    </div><br><br>
+    <button type="submit" [disabled]="userForm.invalid">
+      Submit
+    </button>
+    <button type="button" (click)="resetForm(userForm)">
+      Reset
+    </button>
+  </form>
+</div>

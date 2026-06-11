@@ -12,8 +12,8 @@ import { Component, signal } from '@angular/core';
 // import { Reciever1 } from './RxJs/component/reciever1/reciever1';
 // import { ProductPage } from './RxJs/Subject/product-page/product-page';
 // import { CartPage } from './RxJs/Subject/cart-page/cart-page';
-// import { BehaviorSub } from './RxJs/Subject/behavior-sub/behavior-sub';
-// import { ReplaySub } from './RxJs/Subject/replay-sub/replay-sub';
+import { BehaviorSub } from './RxJs/Subject/behavior-sub/behavior-sub';
+import { ReplaySub } from './RxJs/Subject/replay-sub/replay-sub';
 // import { AsyncSub } from './RxJs/Subject/async-sub/async-sub';
 // import { OpeDemo } from './Operators/ope-demo/ope-demo';
 // import { SwitchOpe } from './Operators/switch-ope/switch-ope';
@@ -24,24 +24,24 @@ import { Component, signal } from '@angular/core';
 // import { CombineProduct } from './Operators/combine-product/combine-product';
 // import { ForkDemo } from './Operators/fork-demo/fork-demo';
 // import { UtilityDemo } from './Operators/utility-demo/utility-demo';
-import { ShareDemo } from './Operators/share-demo/share-demo';
-import { ShareReplayDemo } from './Operators/share-replay-demo/share-replay-demo';
-import { UnsubscribeDemo } from './Operators/unsubscribe-demo/unsubscribe-demo';
-import { SearchForm } from './Forms/search-form/search-form';
-import { ValidationDemo } from './Forms/validation-demo/validation-demo';
-import { HttpUser } from './http/http-user/http-user';
+// import { ShareDemo } from './Operators/share-demo/share-demo';
+// import { ShareReplayDemo } from './Operators/share-replay-demo/share-replay-demo';
+// import { UnsubscribeDemo } from './Operators/unsubscribe-demo/unsubscribe-demo';
+// import { SearchForm } from './Forms/search-form/search-form';
+// import { ValidationDemo } from './Forms/validation-demo/validation-demo';
+// import { HttpUser } from './http/http-user/http-user';
 
 @Component({
   selector: 'app-root',
-  imports: [ ShareDemo, ShareReplayDemo, UnsubscribeDemo, SearchForm, ValidationDemo, HttpUser
-    //  UtilityDemo, 
-    // CombineDemo, CombineProduct, ForkDemo, 
-    // User, DebounceDemo, FilterDemo, SwitchOpe, OpeDemo, 
-    // AsyncSub, BehaviorSub, ReplaySub, 
+   imports: [ //ShareDemo, ShareReplayDemo, UnsubscribeDemo, SearchForm, ValidationDemo, HttpUser, 
+  //    UtilityDemo, 
+  //   CombineDemo, CombineProduct, ForkDemo, 
+  //   User, DebounceDemo, FilterDemo, SwitchOpe, OpeDemo, 
+  //   AsyncSub,
     // ProductPage, CartPage, 
     // Sender, Reciever, Reciever1, SubDemo,ObservableDemo,
     // AuthForm, Login, RegisterForm, Registration,StudentForm, CourseForm
-  ],
+BehaviorSub, ReplaySub],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

@@ -1,0 +1,6 @@
+<h2>Home Page</h2>
+
+<app-product-page [price]="300" (add)="addCart()">
+</app-product-page>
+<p>Items in Cart: {{ cart.items() }}</p>
+<p>Total: {{ cart.total() }}</p>

@@ -1,0 +1,43 @@
+<div *ngIf="isLoading()">
+    <ngx-skeleton-loader count="4" appearance="line">
+    </ngx-skeleton-loader>
+
+<br>
+<ngx-skeleton-loader
+    count="3"
+    appearance="square">
+  </ngx-skeleton-loader>
+  </div>
+
+<div *ngIf="!isLoading() && studentForm">
+    <form [formGroup]="studentForm">
+        <div>
+            <label>Name: </label>
+            <input type="text" formControlName="name">
+        </div><br>
+
+        <div>
+            <label>City: </label>
+            <input type="text" formControlName="city">
+        </div><br>
+        <div formArrayName="skills">
+        <label>Skill: </label>
+            <div *ngFor="let skill of skills.controls; let i = index">
+                
+                <input type="text" [formControlName]="i">
+                <div>
+                    <button type="button" (click)="addSkill(i)">
+                        Add
+                    </button>
+                    <button type="button" (click)="removeSkill(i)">
+                        Remove
+                    </button>
+                </div>
+                <br><br>
+            </div>
+        </div>
+        <button type="submit" (click)="submitForm()" [disabled]="isSubmitted">
+            Submit
+        </button>
+    </form>
+</div>
